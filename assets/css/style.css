@@ -7,7 +7,7 @@
     --main-color-rgb : 239, 70, 72;
     --font-color : #212529;
     --font-color-rgb : 33, 37, 41;
-    --font-size : 16px;
+    --font-size : 15px;
     --font-weight : 600;
     --first-font-family : 'Roboto',sans-serif; 
     --second-font-family : 'Dominary'; 
@@ -29,7 +29,16 @@ a{
     overflow-x: scroll;
 } */
 header{
-    position: fixed;
+        width: 100%;
+        background-color: var(--white);
+        /* box-shadow: 0 1px 15px rgba(0, 0, 0, .04), 0 1px 6px rgba(0, 0, 0, .04); */
+        padding: 5px 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    
+    /* position: fixed; */
 }
 nav > ul{
     display: flex;
@@ -45,4 +54,7 @@ nav > ul{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.main-nav{
+    background-color: rgb(255, 245, 245);
 }
