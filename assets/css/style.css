@@ -11,6 +11,8 @@
     --font-weight : 600;
     --first-font-family : 'Roboto',sans-serif; 
     --second-font-family : 'Dominary'; 
+    --white : white;
+    --white-rgb : 255, 255, 255;
 }
 body{
     color: var(--font-color);
@@ -25,21 +27,21 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-.wrapper{
+/* .wrapper{
     overflow-x: scroll;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     height: 100vh;
-    width: 100vw;
-}
+    width: 100vw; 
+} */
 header{
-    width: 100%;
+    width: 90%;
     background-color: var(--white);
-    padding: 5px 15px;
+    padding: 5px;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+    top: 5px;
+    left: 65px;
+    z-index: 99;
+} 
 nav > ul{
     display: flex;
     align-items: center;
@@ -56,6 +58,10 @@ nav > ul{
     background-size: cover;
     height: 100vh;
 }
-.main-nav{
-    background-color: rgb(255, 245, 245);
+.dropdown{
+    
+}
+.logo a img{
+    
+
 }
