@@ -25,25 +25,26 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-/* .wrapper{
+.wrapper{
     overflow-x: scroll;
-} */
+    /* overflow-y: hidden; */
+    height: 100vh;
+    width: 100vw;
+}
 header{
-        width: 100%;
-        background-color: var(--white);
-        /* box-shadow: 0 1px 15px rgba(0, 0, 0, .04), 0 1px 6px rgba(0, 0, 0, .04); */
-        padding: 5px 15px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    
-    /* position: fixed; */
+    width: 100%;
+    background-color: var(--white);
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 nav > ul{
     display: flex;
     align-items: center;
     gap: 25px;
+    margin-bottom: 0;
 }
 .dropdown-toggle::after{
     border: none;
