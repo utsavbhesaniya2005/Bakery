@@ -14,6 +14,9 @@
     --white : white;
     --white-rgb : 255, 255, 255;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 body{
     color: var(--font-color);
     font-size: var(--font-size);
@@ -21,7 +24,12 @@ body{
     font-family: var(--first-font-family);
     display: flex;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: hidden; 
+    height: 100vh;
+    flex: none;
+}
+section{
+    flex: none;
 }
 ul,ol{
     list-style: none;
@@ -30,11 +38,6 @@ ul,ol{
 a{
     cursor: pointer;
     text-decoration: none;
-}
-.wrapper{
-    width: 100%; 
-    height: 100vh;
-    flex: none;
 }
 header{
     width: 90%;
