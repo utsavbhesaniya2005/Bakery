@@ -31,7 +31,8 @@
                     <nav>
                         <ul>
                             <li class="dropdown">
-                                <a class="dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                                <a class="dropdown-toggle d-flex justify-content-center align-items-center" href="#"
+                                    role="button" data-bs-toggle="dropdown">
                                     <span>All Products</span>
                                     <i class="fa-solid fa-caret-down text-secondary-emphasis"></i>
                                 </a>
@@ -61,7 +62,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                    <span>Company</span>
+                                    <span class="text-body-secondary">All Products</span>
                                     <i class="fa-solid fa-caret-down text-secondary-emphasis"></i>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -72,12 +73,15 @@
                                         <a class="dropdown-item" href="#">Store Locator</a>
                                     </li>
                                     <li>
+                                        <a class="dropdown-item" href="#">Achievements</a>
+                                    </li>
+                                    <li>
                                         <a class="dropdown-item" href="#">Carrer</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Get Franchise</a>
+                                <a href="#" class="text-body-secondary">Get Franchise</a>
                             </li>
                         </ul>
                     </nav>
@@ -109,14 +113,13 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </header>
 
     <main class="d-flex w-100">
-        <section class="banner">
+        <section class="banner w-100">
             <div class="container">
                 <div class="row">
                     <div class="col-1">
@@ -145,7 +148,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
 
     <footer>
@@ -164,28 +166,61 @@
     <script>
         window.addEventListener("wheel", function (event) {
 
+            console.log("?K;l;", event.deltaY);
             if (event.deltaY > 0) {
+                console.log("IF");
                 window.scrollBy({
-                    left: event.deltaY + 200,
+                    left: event.deltaY + 100,
                     behavior: "smooth",
                 });
-            } else {
+            } else if(event.deltaY == undefined){
+                console.log("ELSE IF");
+                console.log(":JDHSJd");
                 window.scrollBy({
-                    left: event.deltaY - 200,
+                    left: 0,
+                    behavior: "smooth",
+                })
+            }else{
+                console.log('ELSE');
+                window.scrollBy({
+                    left: event.deltaY - 100,
                     behavior: "smooth",
                 });
             }
         });
 
+        // window.addEventListener("scroll", function (event) {
+
+        //     console.log("?K;l;", event.deltaY);
+        //     if (event.deltaY > 0) {
+        //         window.scrollBy({
+        //             left: event.deltaY + 100,
+        //             behavior: "smooth",
+        //         });
+        //     } if(event.deltaY == undefined){
+        //         console.log(":JDHSJd");
+        //         window.scrollBy({
+        //             left: 0,
+        //             behavior: "smooth",
+        //         })
+        //     } else {
+        //         window.scrollBy({
+        //             left: event.deltaY,
+        //             behavior: "smooth",
+        //         });
+        //     }
+        // });
+
         window.addEventListener("load", function (event) {
 
             // location.reload()
+
             window.scrollTo(0, 0);
-            // console.log("JEJJKE",event, event.deltaY);
-            // window.scrollBy({
+            console.log("JEJJKE", event, event.deltaY);
+            // window.scrollTo({
             //     left: 0,
             //     behavior: "smooth",
-            // })
+            // });
             // if (event.deltaY > 0) {
             //     window.scrollBy({
             //         left: event.deltaY + 100,
